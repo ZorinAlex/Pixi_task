@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="dist/style.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="info">
+        <span>Number of shapes:</span><span id="numberOfShapes"></span>
+        <span>Area occupied:</span><span id="area"></span>
+    </div>
+    <div id="view"></div>
+    <div class="panel">
+        <button id="decreaseShapes">-</button>
+        <button id="increaseShapes">+</button>
+        <span>shapesPerSecond:</span>
+        <span id="shapesPerSecond"></span>
+        <button id="decreaseGravity">-</button>
+        <button id="increaseGravity">+</button>
+        <span >Gravity:</span>
+        <span id="gravity"></span>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+</script>
+
+
+<script src="node_modules/pixi.js/dist/pixi.min.js"></script>
+<script src="dist/figures.min.js"></script>
+<script src="dist/Event.min.js"></script>
+<script src="dist/Model.min.js"></script>
+<script src="dist/View.min.js"></script>
+<script src="dist/Controller.min.js"></script>
+<script src="dist/init.min.js"></script>
+</body>
+</html>

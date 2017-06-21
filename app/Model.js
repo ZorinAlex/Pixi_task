@@ -26,7 +26,9 @@ class Model{
         this.modelChanged.notify(this)
     }
     decGravity(){
-        this.gravity-=1;
+        if(this.gravity>0){
+            this.gravity-=1;
+        }
         this.modelChanged.notify(this);
     }
     incShapesPerSecond(){
@@ -34,7 +36,9 @@ class Model{
         this.modelChanged.notify(this)
     }
     decShapesPerSecond(){
-        this.shapesPerSecond-=1;
+        if(this.shapesPerSecond>0){
+            this.shapesPerSecond-=1;
+        }
         this.modelChanged.notify(this)
     }
     getArea(){
